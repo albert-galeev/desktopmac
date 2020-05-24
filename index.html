@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Galeev Albert</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="fonts/icofont.min.css">
+</head>
+<body>
+
+
+	<section id="fullpage" class="section_fullpage">
+		<div class="section_fullpage_top">
+			<div class="menu_topbar">
+				<div class="menu_topbar_left">
+					<div class="mini_logo">
+						<i class="fa fa-apple"></i>
+					</div>
+					<span>Resume</span>
+				</div>
+				<div class="menu_topbar_right">
+					<div class="lang">
+						<img src="img/_src/rus.png" alt="">
+					</div>
+					<div class="bluetooth">
+						<i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+					</div>
+					<div class="wifi">
+						<i class="fa fa-wifi" aria-hidden="true"></i>
+					</div>
+					<div class="battery">
+						<span>53%</span>
+						<i class="fa fa-battery-half" aria-hidden="true"></i>
+					</div>
+					<div class="date">
+						<span id="dayweek"></span>
+						<span id="datamonth"></span>
+						<span id="time"></span>
+					</div>
+					<div class="namebook">
+						Galeev Albert
+					</div>
+					<div class="search">
+						<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<div class="tollbar">
+						<a href="#"><img src="img/_src/tollbar.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="desktop">
+			<div class="desktop_folders">
+				<div class="folder_wrapper">
+					<button id="soc_btn" class="btn_folder">
+						<div class="folder">
+							<div class="folder_icon">
+								<img src="img/_src/folder1.png" alt="">
+							</div>
+							<div class="folder_name">
+								Мои соц. сети
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="folder_wrapper">
+					<button id="about_btn" class="btn_folder">
+						<div class="folder">
+							<div class="folder_icon">
+								<img src="img/_src/folder1.png" alt="">
+							</div>
+							<div class="folder_name">
+								Обо мне
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="folder_wrapper">
+					<button class="btn_folder">
+						<div class="folder">
+							<div class="folder_icon">
+								<img src="img/_src/folder1.png" alt="">
+							</div>
+							<div class="folder_name">
+								Навыки
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="folder_wrapper">
+					<button class="btn_folder">
+						<div class="folder">
+							<div class="folder_icon">
+								<img src="img/_src/folder1.png" alt="">
+							</div>
+							<div class="folder_name">
+								Портфолио
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="folder_wrapper">
+					<a class="btn_folder" href="files/resume.doc" download="">
+						<div class="folder">
+							<div class="folder_icon">
+								<img src="img/_src/hh.png" alt="">
+							</div>
+							<div class="folder_name">
+								скачать резюме.doc
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+
+			<div id="soc" class="open_folder_solo" onclick="style.zIndex = zindex++">
+				<div class="open_folder_panel">
+					<div class="open_folder_panel_close">
+						<button id="close_soc" class="close_icon">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="open_folder_panel_title">
+						<span>Мои соц. сети</span>
+					</div>
+				</div>
+				<div class="open_folder_content">
+					<div class="folder_wrapper">
+						<a class="btn_folder" target="_blank" href="https://vk.com/zanyy">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/vk.png" alt="">
+								</div>
+								<div class="folder_name">
+									vk
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="folder_wrapper">
+						<a class="btn_folder" target="_blank" href="https://www.facebook.com/zanyalbert">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/facebook.png" alt="">
+								</div>
+								<div class="folder_name">
+									facebook
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="folder_wrapper">
+						<a class="btn_folder" target="_blank" href="https://vk.com/zanyy">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/hh.png" alt="">
+								</div>
+								<div class="folder_name">
+									резюме на HH
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="folder_wrapper">
+						<a class="btn_folder" target="_blank" href="https://vk.com/zanyy">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/github.png" alt="">
+								</div>
+								<div class="folder_name">
+									github
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="folder_wrapper">
+						<a class="btn_folder" target="_blank" href="https://vk.com/zanyy">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/instagram.png" alt="">
+								</div>
+								<div class="folder_name">
+									instagram
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="about" class="open_folder_solo" onclick="style.zIndex = zindex++">
+				<div class="open_folder_panel">
+					<div class="open_folder_panel_close">
+						<button id="close_about" class="close_icon">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="open_folder_panel_title">
+						<span>Обо мне</span>
+					</div>
+				</div>
+				<div class="open_folder_content">
+					<div class="folder_wrapper">
+						<a class="btn_folder" data-fancybox="" href="img/_src/me-min.JPG">
+							<div class="folder">
+								<div class="folder_icon">
+									<img src="img/_src/me-min.JPG" alt="">
+								</div>
+								<div class="folder_name">
+									моя фотокарточка
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/scripts.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>
