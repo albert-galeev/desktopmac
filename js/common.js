@@ -3,7 +3,6 @@ jQuery(function(){
 });
 
 $(function() {
-	var oclock = new Date().toLocaleTimeString().slice(0,-3);
 	var days =["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"];
 	var now = new Date();
 
@@ -11,9 +10,10 @@ $(function() {
 	var dayWeekEl = document.getElementById(dayWeekId);
 	dayWeekEl.innerHTML = (days[now.getDay()] + ',');
 
-	var timeId = 'time';
-	var timeEl = document.getElementById(timeId);
-	timeEl.innerHTML = (oclock);
+	var time = setInterval(function() {
+		var date = new Date();
+		document.getElementById("time").innerHTML = (date.toLocaleTimeString().slice(0,-3));
+	}, 1000);
 
 	var now = new Date();
 	var textout;
@@ -56,10 +56,9 @@ $("#about_btn").click(function(){
 
 function initDraggble(){
 	$( function() {
-    $( ".open_folder_solo" ).draggable();
-  } );
+		$( ".open_folder_solo" ).draggable();
+	});
 }
-
 
 // ==================================================
 // fancyBox v3.3.5
